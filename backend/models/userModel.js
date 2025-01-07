@@ -30,10 +30,15 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: "Not Selected",
   },
+  dob: {
+    type: String,
+    default: "Not Selected",
+  },
   phone: {
     type: String,
     default: "0000000000",
   },
+  
 });
 
 const useModel = mongoose.models.user || mongoose.model("user", userSchema);
